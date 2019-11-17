@@ -12,7 +12,7 @@ public class Exercise3 {
             if (string.charAt(0) == ' ')
                 count--;
             for (int i = 1; i < string.length(); i++)
-                if(string.charAt(i - 1) == ' ' && string.charAt(i) != ' ')
+                if(string.charAt(i - 1) == ' ' && Character.isLetter(string.charAt(i)))
                     count++;
         }
         else{
